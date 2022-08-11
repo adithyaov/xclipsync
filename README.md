@@ -21,6 +21,10 @@ numerous times without sending any notifications.  It would be better to
 retrieve the clipboard data from the remote screen only at paste time, which
 is what xclipsync does.
 
+## Dependencies
+
+The tool will need xclip and wish to run. Make sure they are installed before
+running.
 
 ## How do I use it?
 
@@ -31,7 +35,7 @@ like this in your .xsession:
         xclipsync &
     fi
 
-This will sync your nested X server's clipboard with the clipboard on :0. 
+This will sync your nested X server's clipboard with the clipboard on :0.
 You can create any number of X servers synced this way, and they will all
 sync smoothly with :0 and therefore with each other.
 
@@ -67,7 +71,7 @@ clipboard.
 
 ## Room for improvement
 
-This set of scripts really sucks!  There's plenty of room to improve. 
+This set of scripts really sucks!  There's plenty of room to improve.
 Patches are welcome.  Suggestions:
 
 - Remove hardcoded CLIPBOARD and let people sync the PRIMARY (ie.

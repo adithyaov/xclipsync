@@ -1,4 +1,5 @@
-#!/bin/sh
+#!@bash@/bin/bash
+
 # The related xclipfrom tool is presumably installed in the same directory
 # as this script.
 cd "$(dirname "$0")"
