@@ -1,5 +1,7 @@
-with (import <nixpkgs> { }).pkgs;
-
+# Run it like so
+# nix-build -E 'with import <nixpkgs> { }; callPackage ./default.nix { }'
+{ pkgs }:
+with pkgs;
 stdenv.mkDerivation {
   name = "xclipsync";
   version = "0.0.0";
